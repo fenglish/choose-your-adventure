@@ -1,5 +1,5 @@
 <h2> <%= @city.name %> Adventures:</h2>
-<form  action=game_path>
+<form action=adventure_index_path>
   <% @city.adventures.each do |adventure| %>
     <input type="radio" name="adventure" value=<%= adventure.id %>><%= adventure.name %><br>
   <% end %>
